@@ -149,7 +149,6 @@ setwd("G:/Mi unidad/code/R/time series forecasting/Experiments ensembles of KNN"
 save(mase, file = "results_M4_quarterly.RData")
 # To compute the mean MASE across the dataset
 round(apply(mase, 2, mean), 3)
-round(apply(mase, 2, median), 3) # median
                        
 # To make the statistical differences analysis
 # library(scmamp)                              # devtools::install_github("b0rxa/scmamp") to install it
