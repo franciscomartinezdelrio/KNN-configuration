@@ -89,9 +89,9 @@ ds <- load_dataset(file) # load the dataset
 collection <- vector("list", length = length(ds))
 for (ind in seq_along(ds)) {
   if (ind %% 500 == 0) cat(ind, "/", length(ds), "\n", sep = "")
-  t <- ds[[ind]]$training                            # time series
+  t <- ds[[ind]]$training                       # time series
   name <- ds[[ind]]$name                        # time series's name
-  test <- ds[[ind]]$test                           # "future" values
+  test <- ds[[ind]]$test                        # "future" values
   af <- tsfknn::knn_forecasting(t, h = length(test), k = 5, transform = "additive")$prediction
   mf <- tsfknn::knn_forecasting(t, h = length(test), k = 5, transform = "multiplicative")$prediction
   collection[[ind]] <- ts_info(t, future = test,
