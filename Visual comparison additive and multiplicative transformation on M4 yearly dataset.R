@@ -82,6 +82,7 @@ load_dataset <- function(file) {
   S
 }
 
+# Download the M4 yearly dataset in tsf format from: https://forecastingdata.org/
 file <- "G:/Mi unidad/data/m4_yearly_dataset.tsf" # use your tsf file
 ds <- load_dataset(file) # load the dataset
 
