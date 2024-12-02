@@ -1,8 +1,8 @@
 #----------------------------------------------------------------------------------
-# This file allows you to visually compare the forecast with multiplicative and
+# This file allows you to visually compare the forecasts with multiplicative and
 # additive transformations for the M4 yearly dataset.
-# Instructions: You can source the file and the, with CTRL-L execute the last
-# command in the file: GUI_collection(collection)
+# Instructions: You can source the file and then (in RStudio), with CTRL-L execute 
+# the last command in the file: GUI_collection(collection)
 # A shiny app will allow you to visually compare the forecasts for the 23,000
 # series
 #----------------------------------------------------------------------------------
